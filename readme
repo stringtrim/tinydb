@@ -1,0 +1,20 @@
+https://www.cnblogs.com/haippy/archive/2012/11/24/2786404.html
+
+csas.h, csas.c：Common Storage Abstract Service（CSAS）实现文件。
+example-engine.c, example-engine.h：如何实现自己的存储引擎，即自定义存储引擎需要实现的接口。
+inmemory-engine.c, inmemory-engine.h：内存式存储引擎，基于 uthash。
+leveldb-engine.c, leveldb-engine.h：持久化存储引擎，基于 google 的 Leveldb。
+sqlite-engine.c, sqlite-engine.h：持久化存储引擎，基于 sqlite。
+main.c：测试文件。
+Makefile：Makefile 文件。
+
+
+CSAS， 实现了一个中间层
+
+net-connectiton
+      |
+~~~~~~~~~~~~~~
+      |
+   C A S S
+      |
+sqlit/leveldb/in-memory-db
